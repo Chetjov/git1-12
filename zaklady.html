@@ -385,6 +385,246 @@ Jde o zdrojovy kod obrazku
         />
       </picture>
     </section>
+    <!-- Video z youtube v iframe -->
+    <section>
+      <h3>youtube</h3>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/5RksFkA4G9Y?si=o1lXwcwThkdSv8h-"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <!-- odkazy a tlacitka -->
+    <section id="links">
+      <h3>Odkazy a tlacitka</h3>
+      <article>
+        <h4>Odkazy</h4>
+        <p>
+          <a class="primary" href="https://www.seznam.cz/">Primarni odkaz</a>
+        </p>
+        <p><a href="#" class="secondary">Sekundarni odkaz</a></p>
+        <p><a href="#" class="secondary">Kontrastni odkaz</a></p>
+      </article>
+    </section>
+    <section>
+      <!-- Tlacitka -->
+      <h3>Tlacitka</h3>
+      <article>
+        <div>
+          <button
+            class="primary"
+            onclick="window.location.href='https:www.seznam.cz/'"
+          >
+            Primarni
+          </button>
+          <button class="secondary">Sekundarni</button>
+          <button class="constrast">Kontrastni</button>
+        </div>
+        <div>
+          <button class="outline"><a href="seznam.cz"></a>Primarni</button>
+          <button class="secondary outline">
+            <a href=""></a>Sekundarni outline
+          </button>
+          <button class="outline contrast">Kontrastni outline</button>
+        </div>
+      </article>
+    </section>
+
+    <!-- Formulare  snazit se mit type a name vzdy-->
+    <section id="forms">
+      <h3>Formulare</h3>
+      <section>
+        <h4>Formular odber novinek</h4>
+        <form class="login-box">
+          <input
+            type="text"
+            name="firstname"
+            placeholder="Krestni Jmeno"
+            requiered
+          />
+          <input type="email" name="mail" placeholder="Email" required />
+          <label for="souhlas">Souhlasim</label>
+          <input name="souhlas" id="souhlas" type="checkbox" checked />
+          <button type="submit">Odebirat</button>
+        </form>
+      </section>
+    </section>
+    <!-- Fieldset a Checkboxy -->
+    <section>
+      <h3>Checkboxy</h3>
+      <fieldset>
+        <legend>Zaskrtavaci policka</legend>
+        <input type="checkbox" name="checkbox-1" id="checkbox-1" checked />
+        <label for="checkbox-1">Polozka1</label>
+        <input type="checkbox" name="checkbox-2" id="checkbox-2" />
+        <label for="checkbox-2">Polozka2</label>
+      </fieldset>
+    </section>
+    <!-- Prepinaci tlacitka -->
+    <!-- tady musi byt stejny name a type aby byli propojene -->
+    <fieldset>
+      <legend>Prepinaci tlacitka</legend>
+      <input type="radio" id="radio-1" name="radio" value="radio-1" checked />
+      <label for="radio-1">Souhlasim</label>
+      <input type="radio" id="radio-2" name="radio" value="radio-2" />
+      <label for="radio-2">Nesouhlasim</label>
+    </fieldset>
+    <!-- switch tlacitka  budem upravovat v kaskdovych switch v html nejde-->
+    <fieldset>
+      <legend><b>Switches </b></legend>
+      <input
+        type="checkbox"
+        id="switch"
+        name="switch-1"
+        role="switch"
+        checked
+      />
+      <label class="switch" for="radio-1">
+        Switch <span class="slider"></span>
+      </label>
+      <input type="checkbox" id="switch" name="switch-2" role="switch" />
+      <label class="switch" for="radio-2">
+        Switch <span class="slider"></span>
+      </label>
+    </fieldset>
+    <!-- select a options -->
+    <section>
+      <label for="mazlicci">Vyberte zviratko</label>
+      <select name="Zvirata" id="mazlicci">
+        <option value="Pes">Pes</option>
+        <option value="Kocka">Kocka</option>
+        <option value="Krecek" selected>Krecek</option>
+        <option value="Papousek">Papousek</option>
+        <option value="Zelva">Zelva</option>
+        <option value="Rybicky">Rybicky</option>
+      </select>
+    </section>
+    <!-- Section s labelem selectem , optiongroup a options-->
+    <section>
+      <label for="food">Oblibene jidlo:</label>
+      <select name="jidlo" multiple id="food" size="4">
+        <optgroup label="Omacky">
+          <option value="Koprova">Koprova</option>
+          <option value="Svickova">Svickova</option>
+          <option value="Zeli" disabled>Zeli</option>
+        </optgroup>
+        <optgroup label="Smazene">
+          <option value="Rizek">Rizek</option>
+          <option value="Smazak">Smazak</option>
+        </optgroup>
+      </select>
+    </section>
+    <!-- section s datalistem a selectem u vsech prikladu kde je label zkontrolovat zabalit cely kod -->
+    <section>
+      <label for="zel"
+        >Zelenina
+        <input type="text" id="zel" list="zelenina" />
+        <datalist id="zelenina">
+          <option value="mrkev">mrkev</option>
+          <option value="cibule">cibule</option>
+          <option value="petrzel">petrzel</option>
+        </datalist>
+      </label>
+    </section>
+    <!-- textarea labely s hr -->
+    <section>
+      <h3>MIX prvku</h3>
+      <label for="textpole">
+        Textove pole
+        <textarea name="textpole" id="textpole" cols="30" rows="3">
+Predvyplneny text</textarea
+        >
+      </label>
+      ><br />
+      <label for="text"
+        >Text:
+        <input type="text" id="text" />
+      </label>
+      <hr />
+      <label for="pass"
+        >Password
+        <input type="password" id="pass" placeholder="Text" />
+      </label>
+      <hr />
+      <label for="hledani"
+        >hledani
+        <input type="search" id="hledani" placeholder="Hledat" />
+      </label>
+      <hr />
+      <input type="email" id="email" placeholder="Email" />
+      <label for="email">napis mi</label>
+      <hr />
+      <!-- Odtud dalsi uloha 38. -->
+      <label for="date"
+        >Datum
+        <input id="date" name="date" type="date" />
+      </label>
+      <hr />
+      <label for="time"
+        >Cas
+        <input id="time" name="time" type="time" />
+      </label>
+      <hr />
+      <label for="color" value="000">
+        <input id="color" name="color" type="color" />
+      </label>
+      <label for="soubory"
+        >Soubory
+        <input id="file" name="file" type="file" />
+      </label>
+      <hr />
+      <label for="range"
+        >Posuvnik rozsahu
+        <input id="range" type="range" min="0" max="70" value="50" />
+      </label>
+    </section>
+
+    <!-- Prace s details a summary -->
+    <section id="rest">
+      <h3>Ostatni</h3>
+      <article id="accordions">
+        <details>
+          <summary>A1</summary>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+            dolorem!
+          </p>
+        </details>
+        <details open>
+          <summary>A2</summary>
+          <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Consequatur tenetur dolore iure laudantium?</li>
+            <li>Accusamus iusto sequi sit. Soluta.</li>
+            <li>Nemo quo iusto atque autem!</li>
+          </ul>
+        </details>
+      </article>
+    </section>
+    <!-- Prace s progress bary s popuskem zabalenym v lavelu-->
+    <section>
+      <h3>Progress bar</h3>
+      <label for="progress-1"
+        >Zaplneni disku
+        <progress id="progress-1" max="100" value="25"></progress>
+      </label>
+      <label for="progress-2"
+        >Nahravani souboru
+        <progress id="progress-2" max="100" value="50"></progress>
+      </label>
+    </section>
+    <!-- Meter skalarni velicny -->
+    <section>
+      <h3>Skalarni veliciny</h3>
+      <label for="meter"
+        >Znecisteni ovzdusi
+        <meter id="meter" low="30" high="50" max="100" value="55"></meter>
+      </label>
+    </section>
 
     <!--konec paticky /footer -->
   </body>
