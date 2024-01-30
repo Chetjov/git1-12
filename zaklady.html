@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Vojtech" />
+    <meta name="description" content="Prehled HTML tagu" />
+    <title>HTML tagy</title>
+  </head>
+  <body>
+    <header>
+      <!-- hlavicka -->
+      <h1>HTML tagy</h1>
+      <!--hlavni Nadpis  -->
+      <h2>Prikladova satranka s HTML tagy</h2>
+      <h2>Menu</h2>
+      <p>zde bude navigace</p>
+      <!-- aside bocni panel-->
+      <aside class="sub_menu">
+        <h2>Na teto strance:</h2>
+      </aside>
+      <!-- /aside-->
+    </header>
+    <!-- /header konec-->
+
+    <!-- sekce1 s dvema odstavci -->
+    <!-- section#typography>article>h3{Odstavec}+p+h3{Zalomeni}+p -->
+    <section id="typography">
+      <article>
+        <h3>Odstavec</h3>
+        <p>Příliš žluťoučký kůň úpěl ďábelské ódy.</p>
+        <h3>Zalomeni</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+          doloremque atque enim, earum<br />
+          temporibus, id dolores, ratione dolor qui aut sit mollitia voluptatem
+          aperiam nostrum eos quod totam rem. Magni?
+        </p>
+      </article>
+    </section>
+    <!-- konec sekce -->
+    <!-- sekce cislo 2 -->
+    <!--v emmetu po h3 section.reset>h1{Nadpis 1}+p>lorem10^h2{Nadpis 2}+p>lorem10^h3{Nadpis 3}+p>lorem10 -->
+    <section class="reset">
+      <h1>Nadpis 1</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+        optio doloremque. Nihil distinctio quasi ipsam? Soluta animi odio quos
+        assumenda.
+      </p>
+      <h2>Nadpis 2</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi libero
+        non unde voluptas voluptatem blanditiis officiis ut neque fugit facere!
+      </p>
+      <h3>Nadpis 3</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
+        doloribus corporis sit unde odit illum temporibus beatae sapiente culpa
+        ratione quae eos, vitae dolore dicta ex adipisci facere enim fuga.
+      </p>
+      <h4>Nadpis 4</h4>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+        inventore voluptate officiis facere velit molestias, a quod vel officia,
+        ipsum sit dolores totam laudantium, pariatur recusandae mollitia natus
+        necessitatibus eaque!
+      </p>
+      <h5>Nadpis 5</h5>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores magni
+        tempora facere soluta cumque facilis minus, fugit exercitationem a. At,
+        architecto recusandae nesciunt harum nobis dicta quis a voluptatem sint!
+      </p>
+      <h6>Nadpis 6</h6>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+        asperiores doloremque sunt nam beatae harum laborum repudiandae natus,
+        omnis voluptates nisi eaque. Corrupti amet minus delectus a aliquid,
+        itaque eius.
+      </p>
+    </section>
+    <!-- konec sekce -->
+    <!-- zacatek sekce -->
+    <!-- V emmetu section>h3+p>lorem10^^footer>lorem5 -->
+    <section>
+      <article class="article">
+        <h3>Clanek</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque optio
+          delectus voluptate quod laborum libero velit nulla ex reprehenderit
+          cum?
+        </p>
+        <footer>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur,
+          iusto.
+        </footer>
+      </article>
+    </section>
+    <!-- adresa  -->
+    <!-- v Emmetu section>hr+address{test.cz s.r.o.<br>Ulice 123, Mesto<br>>Czechia}+hr -->
+    <section>
+      <hr />
+      <address>test.cz s.r.o.<br />Ulice 123,Mesto<br />Czechia</address>
+      <hr />
+    </section>
+    <!-- inline styl a span -->
+    <h4>Span</h4>
+    <p>
+      Lorem ipsum dolor sit
+      <span class="red" style="color: red"
+        >amet consectetur adipisicing elit. Tempore veritatis quidem a aliquam
+        nobis</span
+      >, dolor dolore. Molestias reiciendis veritatis praesentium quos tenetur
+      explicabo,<span class="red"> nemo illum labore</span> vel doloribus
+      voluptatum nostrum?
+    </p>
+    <!--Prvky ovlivnujici design bez css tohle v Emmetu dotaz?-->
+
+    <section>
+      <h3>Prvky odvlivnujici design</h3>
+      <b>bold</b><br />
+      <p><i>italic</i><br /></p>
+      <p><u>underline</u><br /></p>
+      <p><del>deleted</del><br /></p>
+      <p><ins>inserted</ins><br /></p>
+      <p><strike>Strikethrought</strike><br /></p>
+      <p>
+        <small><small></small></small>
+      </p>
+      <p><big>big</big></p>
+      <p>
+        <span>text<sub>sub</sub></span
+        ><br />
+      </p>
+      <p>
+        <span>Text <sup>sup</sup></span
+        ><br />
+      </p>
+      <p>
+        <abbr title="Abbreaviation" data-tooltip="zkratka">Abbr</abbr><br />
+      </p>
+      <p><kbd>Kdb</kbd><br /></p>
+      <p><mark>Highlighted</mark><br /></p>
+    </section>
+    <!-- Tak pre se moc nepouziva , ale udryuje format ve kterem je napsany -->
+    <section>
+      <h3>PRE</h3>
+      <pre>
+Text je zobrzen s s dixni sirkou, a zachovava jak     mezerey tak 
+odradkovani
+            </pre
+      >
+    </section>
+    <!--blockquote section>h3>blockquote{Hlavni smysl v tomto zivote je pomahat druhym}>footer[title="Nekdo Slavny"]>cite{Zdroj} -->
+    <section>
+      <h3>blockquote</h3>
+      <blockquote>
+        Hlavní smysl v tomto životě je pomáhat druhým. A pokud jim nemůžete
+        pomoci, aspoň jim neubližujte.
+        <footer title="Nekdo slavny">Nekdo slavny <cite>Zdroj</cite></footer>
+      </blockquote>
+    </section>
+    <!-- zacatek footer -->
+    <!-- citace odstavce -->
+
+    <!-- quote -->
+    <!-- section>h3+p>q[cite=zpohdaky] zbytek dopsat samostatne -->
+    <!--Emmetu vsection>h3{q cite}+p>q[cite="zpohadky.cz"]{To je vyborne, moc se ti to povedlo,} -->
+
+    <!-- Citace s odkazem -->
+    <!-- dotaz!! jak zapsat v paragrafu a q a pak za q pokracovat v p  section>h3+p{lorem15}-->
+    <section>
+      <h3>q cite</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur,
+        dolor recusandae. <q title="Sokrates">Vel ratione eum officiis</q> error
+        tempora itaque? Consequatur, velit.
+      </p>
+    </section>
+
+    <!-- section>figure>h4>blockquote>p{Chapu jak nechapu proc} a druhe figcaption>cite>a{1984} -->
+    <section>
+      <figure>
+        <h4>Figure a FigCaption</h4>
+        <blockquote><p>Chapu jak, nechapu proc</p></blockquote>
+        <figcaption>
+          <cite><a href="https://george-orwell.org?1984">1984</a></cite>
+          , George Orwell
+        </figcaption>
+      </figure>
+    </section>
+    <!-- tag code -->
+    <!-- v emmetusection>h4+p{Funkce Say Hello()} "Dotaz na zapis v emmetu kvuli code" -->
+    <section>
+      <h4>code</h4>
+      <p>Funkce <code>sayHello()</code>Say Hello</p>
+    </section>
+    <!-- Seznamy listy -->
+    <!-- v emmetu section>article>h2>section>h3{Neusporadany}+ul[type="square"]>li*5>Lorem5 -->
+    <section id="lists">
+      <article>
+        <h2>Seznamy</h2>
+        <section>
+          <h3>Neusporadany</h3>
+          <ul type="square">
+            <li>Lorem ipsum dolor sit, amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+          </ul>
+        </section>
+      </article>
+    </section>
+    <!-- ol reversed a roman type -->
+    <!-- v Emmetu section>h2{Usporadany}+ol[type="I"reversed]>li*4>lorem5 -->
+    <section>
+      <h2>Usporadany</h2>
+      <ol type="I" reversed>
+        <li>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+          tempora.
+        </li>
+        <li>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+          tempora.
+        </li>
+        <li>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+          tempora.
+        </li>
+        <li>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+          tempora.
+        </li>
+      </ol>
+    </section>
+    <!-- emmet section>h3{Tabulky}+table>tr*6>td{bunka $}*6 -->
+    <!-- Opravena tabulka  -->
+    <section>
+      <h3>Tabulky</h3>
+      <table border="1">
+        <tr>
+          <td>bunka 1</td>
+          <td>bunka 2</td>
+          <td>bunka 3</td>
+          <td>bunka 4</td>
+          <td>bunka 5</td>
+          <td>bunka 6</td>
+        </tr>
+        <tr>
+          <td>bunka 1</td>
+          <td>bunka 2</td>
+          <td>bunka 3</td>
+          <td>bunka 4</td>
+          <td>bunka 5</td>
+          <td>bunka 6</td>
+        </tr>
+        <tr>
+          <td>bunka 1</td>
+          <td>bunka 2</td>
+          <td>bunka 3</td>
+          <td>bunka 4</td>
+          <td>bunka 5</td>
+          <td>bunka 6</td>
+        </tr>
+        <tr>
+          <td>bunka 1</td>
+          <td>bunka 2</td>
+          <td>bunka 3</td>
+          <td>bunka 4</td>
+          <td>bunka 5</td>
+          <td>bunka 6</td>
+        </tr>
+        <tr>
+          <td>bunka 1</td>
+          <td>bunka 2</td>
+          <td>bunka 3</td>
+          <td>bunka 4</td>
+          <td>bunka 5</td>
+          <td>bunka 6</td>
+        </tr>
+        <tr>
+          <td>bunka 1</td>
+          <td>bunka 2</td>
+          <td>bunka 3</td>
+          <td>bunka 4</td>
+          <td>bunka 5</td>
+          <td>bunka 6</td>
+        </tr>
+      </table>
+    </section>
+    <!-- tabulka se sjednocenyma bunkama sjednocene az po vytvoreni emmetu-->
+    <!-- Zapis v emmetu section>table>thead>(tr>th{bunka$}*4)>tbody>(tr*3>td{bunka$}*4) -->
+    <!--  -->
+    <section>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>bunka1</th>
+            <th colspan="2">bunka2</th>
+            <th>bunka3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">bunka1</td>
+            <td>bunka2</td>
+            <td>bunka3</td>
+            <td>bunka4</td>
+          </tr>
+          <tr>
+            <td>bunka2</td>
+            <td>bunka3</td>
+            <td>bunka4</td>
+          </tr>
+          <tr>
+            <td>bunka1</td>
+            <td>bunka2</td>
+            <td>bunka3</td>
+            <td>bunka4</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <!-- Media SVG  s textem uvnitr-->
+    <section>
+      <h3></h3>
+      <svg width="100%" height="250px">
+        <rect width="100%" height="100%" fill="#333"></rect>
+        <text x="20%" y="30%" fill="fff">Responzivni design</text>
+      </svg>
+    </section>
+
+    <!-- Media SVG -->
+    <section>
+      <svg width="500px" height="300px" stroke="red" stroke-width="10">
+        <rect width="80%" height="70%"></rect>
+      </svg>
+      <!-- SVG s circle uvnitr  obarveny jinak-->
+      <svg width="500px" height="300px" stroke="red" stroke-width="10">
+        <rect width="80%" height="70%"></rect>
+        <circle
+          stroke="blue"
+          border="red"
+          cy="140"
+          cx="200"
+          r="100px"
+          fill="#65dd8a"
+        ></circle>
+      </svg>
+    </section>
+
+    <!-- Obrazek s nadpisem a pospisem figure/figcaption-->
+    <!-- Poznamka aby se objevil obrazek v prohlizeci musi se:
+1.klik pravym na obrazek
+2.kopirovat adresu obrazku
+Jde o zdrojovy kod obrazku
+ -->
+    <section>
+      <figure>
+        <h3>Obrazek</h3>
+        <img
+          width="300"
+          src="https://plus.unsplash.com/premium_photo-1683910767532-3a25b821f7ae?q=80&w=2008&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <figcaption>Popis obrazku</figcaption>
+      </figure>
+      <!-- picture s obrazky podle rozmeru -->
+      <picture>
+        <source
+          media="(max-width:400px)"
+          sourceset="https://images.unsplash.com/photo-1593696954577-ab3d39317b97?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+        <source
+          media="(max-width:600px)"
+          sourceser="https://images.unsplash.com/photo-1586810724476-c294fb7ac01b?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+        <img
+          width="601"
+          src="https://images.unsplash.com/photo-1626808642875-0aa545482dfb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+      </picture>
+    </section>
+
+    <!--konec paticky /footer -->
+  </body>
+</html>
